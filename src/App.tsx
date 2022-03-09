@@ -1,8 +1,10 @@
 import React from 'react'
 
+import { AppContainer } from './ui'
+
 const App = (): JSX.Element => {
   return (
-    <div>App</div>
+    <AppContainer>App</AppContainer>
   )
 }
 
