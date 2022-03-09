@@ -11,10 +11,19 @@ const LISTS: ITaskList[] = [
     tasks: [
       {
         id: '00',
-        text: 'Task 1'
+        text: 'Task 1',
+        priority: 'HIGH'
       }, {
         id: '01',
-        text: 'Task 2'
+        text: 'Task 2',
+        priority: 'MEDIUM'
+      }, {
+        id: '02',
+        text: 'Task 3',
+        priority: 'LOW'
+      }, {
+        id: '03',
+        text: 'Task 4'
       }
     ]
   }
