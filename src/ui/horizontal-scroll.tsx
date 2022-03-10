@@ -8,6 +8,7 @@ const HorizontalScroll = styled.div`
   display: flex;
   gap: 1rem;
   overflow-x: auto;
+  align-items: flex-start;
 `
 
 export default HorizontalScroll
