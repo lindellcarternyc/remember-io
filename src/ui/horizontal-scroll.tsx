@@ -6,7 +6,7 @@ const HorizontalScroll = styled.div`
   box-sizing: border-box;
 
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   overflow-x: auto;
 `
 
