@@ -1,6 +1,4 @@
-export interface Entity {
-  id: string
-}
+import { Entity, ObjectMap } from '../interfaces'
 
 export type Priority = 
   | 'HIGH'
@@ -14,5 +12,5 @@ export interface ITask extends Entity {
 
 export interface ITaskList extends Entity {
   title: string
-  tasks: ITask[]
+  tasks: ObjectMap<ITask>
 }

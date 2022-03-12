@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mapObject } from '../utils/collection.utils'
 
 import { ITaskList } from './interfaces'
 
@@ -34,7 +35,7 @@ const TaskList = ({ list }: TaskListProps): JSX.Element => {
       <TaskListTitle>
         {list.title}
       </TaskListTitle>
-      {list.tasks.map(task => (
+      {mapObject(list.tasks, task => (
         <Task key={task.id} task={task} />
       ))}
     </TaskListWrapper>
