@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import AddButton from '../ui/add-button'
 import { mapObject } from '../utils/collection.utils'
 
 import { ITaskList } from './interfaces'
@@ -38,6 +39,11 @@ const TaskList = ({ list }: TaskListProps): JSX.Element => {
       {mapObject(list.tasks, task => (
         <Task key={task.id} task={task} />
       ))}
+      <AddButton 
+        dark
+        text='+ Add Task'
+        onClick={alert}
+      />
     </TaskListWrapper>
   )
 }
