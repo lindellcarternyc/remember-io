@@ -1,6 +1,7 @@
+import { ObjectMap } from '../interfaces'
 import { ITaskList } from '../task-list/interfaces'
 
-const LISTS: { [id: string]: ITaskList } = {
+const LISTS: ObjectMap<ITaskList> = {
   '0': {
     id: '0',
     title: 'List 1',

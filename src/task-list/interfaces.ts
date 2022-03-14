@@ -11,6 +11,7 @@ export interface ITask extends Entity {
 }
 
 export interface ITaskList extends Entity {
+  id: string
   title: string
   tasks: ObjectMap<ITask>
 }
